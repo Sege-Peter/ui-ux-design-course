@@ -1,196 +1,205 @@
-# Module 11: Comprehensive UI/UX Tools Directory & Practical Hands-On Sessions
+# Module 11: Industry-Wide UI/UX Tools Directory & Hands-On Practical Sessions
 
-Mastering UI/UX requires fluency across the modern product design stack. This directory provides verified external links, categorized industry tools, and step-by-step practical sessions for each phase of the product development lifecycle.
-
----
-
-## 🧭 Navigation by Lifecycle Phase
-
-1. [Phase 1: Discovery, Research & Empathy](#phase-1-discovery-research--empathy)
-2. [Phase 2: AI-Powered Ideation & Rapid Generation](#phase-2-ai-powered-ideation--rapid-generation)
-3. [Phase 3: Vector Layout, UI Design & Design Systems](#phase-3-vector-layout-ui-design--design-systems)
-4. [Phase 4: Advanced Interaction Prototyping & Motion](#phase-4-advanced-interaction-prototyping--motion)
-5. [Phase 5: Usability Testing, Heatmaps & Analytics](#phase-5-usability-testing-heatmaps--analytics)
-6. [Phase 6: Accessibility (a11y) & Inclusive Design Tools](#phase-6-accessibility-a11y--inclusive-design-tools)
-7. [Phase 7: Design-to-Code Handoff & Token Management](#phase-7-design-to-code-handoff--token-management)
+A comprehensive, industry-standard breakdown of the primary tools used across the modern product design lifecycle, paired with direct verified external links and 8 hands-on practical lab sessions.
 
 ---
 
-## Phase 1: Discovery, Research & Empathy
+## 🧭 Directory Navigation (8 Workflow Categories)
 
-Tools used to understand user problems, conduct stakeholder workshops, synthesize qualitative interviews, and map journeys.
+1. [Primary UI & Vector Design (The Industry Core)](#1-primary-ui--vector-design-the-industry-core)
+2. [UX Research, Whiteboarding & Information Architecture](#2-ux-research-whiteboarding--information-architecture)
+3. [Wireframing & Low-Fidelity Prototyping](#3-wireframing--low-fidelity-prototyping)
+4. [Advanced Interaction, Micro-Interactions & Motion](#4-advanced-interaction-micro-interactions--motion)
+5. [AI-Native UI & Generative Workflow Tools](#5-ai-native-ui--generative-workflow-tools)
+6. [Usability Testing & Analytics](#6-usability-testing--analytics)
+7. [Developer Handoff & Design-to-Code Bridges](#7-developer-handoff--design-to-code-bridges)
+8. [Essential Figma Plugins for Daily Workflow](#8-essential-figma-plugins-for-daily-workflow)
 
-| Tool | Core Use Case | Pricing Model | External Link |
+---
+
+## 1. Primary UI & Vector Design (The Industry Core)
+
+These are the primary environments where actual visual interfaces, screen layouts, design systems, and component libraries are constructed.
+
+| Tool | Core Strength & Description | Platform | External Link |
 | :--- | :--- | :--- | :--- |
-| **FigJam** | Collaborative whiteboarding, sticky-note affinity mapping, and user journey flowcharts. | Free tier / Paid with Figma | [figma.com/figjam ↗](https://www.figma.com/figjam/) |
-| **Miro** | Enterprise visual collaboration, remote design thinking workshops, and sitemapping. | Free tier / Team subscription | [miro.com ↗](https://miro.com/) |
-| **Dovetail** | Research repository, video transcription, customer quote tagging, and insight clustering. | Free trial / Paid subscription | [dovetail.com ↗](https://dovetail.com/) |
-| **Notion** | Centralized documentation, interview question repositories, and product design briefs. | Free for individuals / Paid teams | [notion.so ↗](https://www.notion.so/) |
-| **Typeform** | Conversational quantitative user surveys with conditional branching logic. | Free tier / Paid subscription | [typeform.com ↗](https://www.typeform.com/) |
-| **Optimal Workshop** | Information architecture testing: Tree testing, card sorting, and first-click analysis. | Free trial / Paid tiers | [optimalworkshop.com ↗](https://www.optimalworkshop.com/) |
+| **Figma** | The dominant industry standard. Browser-based, real-time collaborative canvas for UI design, design systems (Auto Layout, Tokens/Variables), and developer handoff. | Web, macOS, Windows | [figma.com ↗](https://www.figma.com/) |
+| **Sketch** | Native macOS vector UI editor. Widely used by privacy-focused organizations, enterprise teams, and designers who prefer local-first symbol libraries. | macOS native | [sketch.com ↗](https://www.sketch.com/) |
+| **Adobe XD** | Adobe’s desktop vector tool for wireframing and prototyping (in maintenance mode within the Creative Cloud suite). | Windows, macOS | [helpx.adobe.com/xd ↗](https://helpx.adobe.com/xd/get-started.html) |
+| **Penpot** | The leading open-source, web-based alternative to Figma that relies natively on standard CSS web standards (flexbox and grid) for layout. | Web, Self-hosted | [penpot.app ↗](https://penpot.app/) |
 
-### 🛠️ Practical Session 1: Affinity Mapping in FigJam
-- **Objective:** Synthesize raw interview transcripts from 5 participants into actionable theme clusters.
+### 🛠️ Practical Session 1: Production Component Variants in Figma
+- **Objective:** Build an atomic, accessible button component set with multiple variants and properties.
 - **Step-by-Step Instructions:**
-  1. Open [FigJam](https://www.figma.com/figjam/) and create a new board named `Sprint 1 - User Research Synthesis`.
-  2. Paste user quotes into color-coded digital sticky notes (e.g. Green = Delight, Red = Frustration, Yellow = Workaround).
-  3. Group related stickies into thematic clusters (e.g. *"Confusion on Shipping Costs"*, *"Search Filter Visibility"*).
-  4. Use the voting stamp tool with your team to rank the top 3 user pain points.
-  5. Formulate 2 actionable **"How Might We" (HMW)** problem statements at the bottom of the board.
+  1. Open [Figma](https://www.figma.com/) and press `T` to create a label: `"Save Changes"`.
+  2. Press `Shift + A` to wrap it in an Auto Layout frame.
+  3. Configure Auto Layout dimensions: `Vertical padding = 12px`, `Horizontal padding = 24px`, `Corner radius = 8px`.
+  4. Create 3 distinct variants:
+     - **Primary:** Solid brand blue background (`#3B82F6`), white text.
+     - **Secondary:** Outlined border (`1.5px solid #E2E8F0`), neutral dark text (`#0F172A`).
+     - **Destructive:** Danger red background (`#EF4444`), white text.
+  5. Add a boolean property `hasIcon` to toggle an optional left-aligned vector icon.
+  6. Publish this to your team library and test dragging instances into a fresh screen.
 
 ---
 
-## Phase 2: AI-Powered Ideation & Rapid Generation
+## 2. UX Research, Whiteboarding & Information Architecture
 
-Tools that accelerate initial wireframing, eliminate blank-canvas paralysis, and provide competitive design intelligence.
+Used for discovery, synthesis, customer journey maps, user flows, and workshop facilitation.
 
-| Tool | Core Use Case | Pricing Model | External Link |
+| Tool | Core Strength & Description | Platform | External Link |
 | :--- | :--- | :--- | :--- |
-| **Google Stitch** | Generative AI tool (Google Labs) transforming natural language or sketches into responsive UI layouts. | Free experimental access | [stitch.withgoogle.com ↗](https://stitch.withgoogle.com/) |
-| **UX Pilot** | AI assistant for generating user interview scripts, wireflow outlines, and competitive matrices. | Freemium | [uxpilot.ai ↗](https://www.uxpilot.ai/) |
-| **Galileo AI** | Generates editable, multi-layer vector UI screens for Figma from text prompts. | Paid with free trial credits | [usegalileo.ai ↗](https://www.usegalileo.ai/) |
-| **Mobbin** | Hand-curated library of 300,000+ real iOS, Android, and Web production UI screens and user flows. | Free browsing / Paid Pro | [mobbin.com ↗](https://mobbin.com/) |
-| **Page Flows** | Video screen recordings of user onboarding, checkout, and upgrade flows from top digital brands. | Subscription | [pageflows.com ↗](https://pageflows.com/) |
+| **FigJam** | Figma’s integrated collaborative whiteboard for diagrams, sticky notes, voting widgets, and retrospectives. | Web, iPad | [figma.com/figjam ↗](https://www.figma.com/figjam/) |
+| **Miro** | Enterprise-grade virtual whiteboard used for customer journey maps, product roadmaps, and stakeholder workshops. | Web, Desktop, Mobile | [miro.com ↗](https://miro.com/) |
+| **Mural** | Collaborative workspace optimized for guided design thinking workshops and team exercises. | Web, Teams, Zoom | [mural.co ↗](https://www.mural.co/) |
+| **Whimsical** | Fast, lightweight tool for wireframes, mind maps, user flows, and technical flowcharts. | Web-based | [whimsical.com ↗](https://whimsical.com/) |
+| **Dovetail** | UX research repository tool for tagging transcripts, clustering qualitative user quotes, and synthesizing interview insights. | Web-based | [dovetail.com ↗](https://dovetail.com/) |
+| **Optimal Workshop** | Specialized platform for information architecture: tree testing (Treejack), card sorting (OptimSort), and first-click testing (Chalkmark). | Web-based | [optimalworkshop.com ↗](https://www.optimalworkshop.com/) |
 
-### 🛠️ Practical Session 2: Competitive Benchmark & Flow Analysis via Mobbin
-- **Objective:** Benchmark the onboarding flows of 3 premier SaaS applications to design an industry-standard signup process.
+### 🛠️ Practical Session 2: Information Architecture & Card Sorting
+- **Objective:** Evaluate and structure an e-commerce sitemap using open card sorting techniques.
 - **Step-by-Step Instructions:**
-  1. Visit [Mobbin](https://mobbin.com/) and filter by **Flows ➔ Onboarding**.
-  2. Select 3 apps in your domain (e.g. Linear, Duolingo, Stripe).
-  3. Screenshot the step-by-step screens and paste them into Figma.
-  4. Count the number of mandatory form fields required before reaching the value moment ("Aha!" moment).
-  5. Identify how each app implements progress bars (Heuristic #1: Visibility of System Status) and social OAuth shortcuts.
+  1. Open [Whimsical](https://whimsical.com/) or [FigJam](https://www.figma.com/figjam/).
+  2. Create 20 digital sticky cards representing product catalog items (e.g., *"Wireless Noise-Cancelling Headphones"*, *"USB-C Fast Charger"*, *"Ergonomic Desk Chair"*).
+  3. Invite 2 peers to group cards into intuitive buckets and assign each bucket a clear category label.
+  4. Compare the mental models: Did participants group by *Device Type* (Audio vs Power) or by *Context* (Work From Home vs Commute)?
+  5. Draft a 2-level sitemap tree reflecting the consensus.
 
 ---
 
-## Phase 3: Vector Layout, UI Design & Design Systems
+## 3. Wireframing & Low-Fidelity Prototyping
 
-The primary production workspaces for creating wireframes, component libraries, and pixel-perfect high-fidelity mockups.
+Used to test structural layouts and user flows without getting distracted by visual polish (colors, typography, images).
 
-| Tool | Core Use Case | Operating System | External Link |
+| Tool | Core Strength & Description | Platform | External Link |
 | :--- | :--- | :--- | :--- |
-| **Figma** | Industry standard for collaborative UI design, Auto Layout, variants, and design systems. | Web, macOS, Windows | [figma.com ↗](https://www.figma.com/) |
-| **Penpot** | The leading open-source, web-standards-based design and prototyping platform. | Web browser, Self-hosted | [penpot.app ↗](https://penpot.app/) |
-| **Sketch** | Pioneer vector design tool with native macOS performance and symbol libraries. | macOS native | [sketch.com ↗](https://www.sketch.com/) |
-| **Adobe XD** | Adobe's vector interface design tool with Creative Cloud asset integration. | Windows, macOS | [helpx.adobe.com/xd ↗](https://helpx.adobe.com/xd/get-started.html) |
+| **Balsamiq** | Deliberately uses a rough, hand-drawn comic aesthetic to keep early stakeholder focus entirely on logic and functionality. | Web, Desktop | [balsamiq.com ↗](https://balsamiq.com/) |
+| **Axure RP** | Advanced wireframing and interaction documentation tool that supports variables, conditional logic, and database-like data grids. | macOS, Windows | [axure.com ↗](https://www.axure.com/) |
+| **OmniGraffle** | macOS/iPadOS diagramming tool frequently used for wireframing, structural schematics, and technical user flows. | macOS, iOS | [omnigroup.com/omnigraffle ↗](https://www.omnigroup.com/omnigraffle/) |
 
-### 🛠️ Practical Session 3: Building a Responsive Auto Layout Card in Figma
-- **Objective:** Create a production-ready, accessible pricing card using Figma Auto Layout and variants.
+### 🛠️ Practical Session 3: Lo-Fi Wireframing in Balsamiq
+- **Objective:** Build a low-fidelity wireframe to resolve a checkout friction point without getting bogged down in visual styling.
 - **Step-by-Step Instructions:**
-  1. Open [Figma](https://www.figma.com/) and press `F` to create a Desktop Frame (1440 x 900 px).
-  2. Press `T` to type a price tag (e.g. `$29/month`). Set to `Semi-Bold 32px` on an 8pt baseline.
-  3. Select your text layer and press `Shift + A` to wrap it in an **Auto Layout Frame**.
-  4. Set padding: `Vertical = 24px`, `Horizontal = 24px`, `Corner Radius = 12px`.
-  5. Add a Primary Button inside the card and set its horizontal resizing to **Fill Container** so it expands responsively.
-  6. Press `Cmd/Ctrl + Alt + K` to convert the card into a **Main Component (`❖`)**.
-  7. Add a Component Variant for the `"Popular / Recommended"` state with a distinct 2px brand border.
+  1. Open [Balsamiq](https://balsamiq.com/) and drag a Browser Window container onto the canvas.
+  2. Add low-fidelity UI components: Accordion steps for *Shipping Address*, *Payment Method*, and *Review Order*.
+  3. Use generic placeholder blocks for logos and images to force reviewers to comment exclusively on layout hierarchy and field counts.
+  4. Share the wireframe with your team and capture feedback on the checkout sequence before opening Figma.
 
 ---
 
-## Phase 4: Advanced Interaction Prototyping & Motion
+## 4. Advanced Interaction, Micro-Interactions & Motion
 
-Tools for building high-fidelity realistic interactions, sensor gestures, and web-ready vector animations.
+When standard Figma click-through transitions aren't enough to represent real app mechanics, device hardware, or physics.
 
-| Tool | Core Use Case | Key Strength | External Link |
+| Tool | Core Strength & Description | Platform | External Link |
 | :--- | :--- | :--- | :--- |
-| **ProtoPie** | High-fidelity prototypes with conditional logic, formulas, camera input, and device sensors. | Native device testing | [protopie.io ↗](https://www.protopie.io/) |
-| **Framer** | Interactive visual website builder that exports production React code with native CMS. | Real web canvas | [framer.com ↗](https://www.framer.com/) |
-| **Principle** | Timeline-based micro-interaction animator for complex drag, swipe, and scroll physics. | Spring animations | [principleformac.com ↗](https://principleformac.com/) |
-| **LottieFiles** | Platform for testing, editing, and embedding lightweight JSON-based vector animations. | Ultra-lightweight file size | [lottiefiles.com ↗](https://lottiefiles.com/) |
-| **Rive** | Real-time interactive vector graphics with state machines that react dynamically to code. | Dynamic runtime physics | [rive.app ↗](https://rive.app/) |
+| **ProtoPie** | Prototyping platform supporting device sensors (camera, gyroscope, microphone), formulas, and cross-device interaction. | macOS, Windows, Mobile | [protopie.io ↗](https://www.protopie.io/) |
+| **Principle** | macOS tool designed for rapid micro-interaction design, timeline transitions, and animated interface elements. | macOS native | [principleformac.com ↗](https://principleformac.com/) |
+| **Rive** | Real-time interactive vector graphics with state machines that run directly in code at 60+ FPS. | Web, Desktop, Runtimes | [rive.app ↗](https://rive.app/) |
+| **LottieFiles** | Platform for creating, editing, and embedding lightweight JSON-based vector animations across iOS, Android, and Web. | Web, Plugins, Mobile | [lottiefiles.com ↗](https://lottiefiles.com/) |
+| **Origami Studio** | Built by Meta; uses a visual patch/node-based editor to design realistic gestures, physics animations, and sensor inputs. | macOS native | [origami.design ↗](https://origami.design/) |
 
-### 🛠️ Practical Session 4: Smart Animate Micro-interactions in Figma
-- **Objective:** Prototype a toggle switch that animates smoothly between `Off` (gray) and `On` (brand blue).
+### 🛠️ Practical Session 4: Spring Physics & Micro-Interactions in ProtoPie
+- **Objective:** Create a prototype where dragging a payment card over a threshold triggers haptic-like card snap physics.
 - **Step-by-Step Instructions:**
-  1. In Figma, draw a rounded rectangle (width: 52px, height: 32px, corner radius: 9999px) with fill `#E2E8F0`.
-  2. Place a white circle knob (diameter: 24px) aligned to the left with 4px padding.
-  3. Duplicate the frame. On the second frame, slide the knob to the right and change the background fill to `#3B82F6`.
-  4. Select both frames and click **Create Component Set**.
-  5. Switch to the **Prototype tab** (`Shift + E`). Drag a blue connection wire from State 1 to State 2.
-  6. Interaction Details:
-     - **Trigger:** `On Click`
-     - **Action:** `Change to`
-     - **Animation:** `Smart Animate`, `Ease Out (300ms)`.
-  7. Click the **Present button (▶)** to test the physics of the toggle switch.
+  1. Import your card mockup from Figma into [ProtoPie](https://www.protopie.io/).
+  2. Add a **Drag Trigger** to the card layer.
+  3. Add a **Move Response** tied to pointer movement along the Y-axis.
+  4. Set conditional boundaries: `If card.y > 300`, trigger a **Scale** and **Spring Easing** snap animation into the checkout dock.
+  5. Run the prototype on ProtoPie Player on your mobile phone to test tactile feel.
 
 ---
 
-## Phase 5: Usability Testing, Heatmaps & Analytics
+## 5. AI-Native UI & Generative Workflow Tools
 
-Tools to evaluate designs with real users, collect quantitative success metrics, and monitor post-launch behavior.
+Tools that convert text prompts, wireframe screenshots, or hand-drawn sketches into editable digital layouts or production code.
 
-| Tool | Core Use Case | Test Type | External Link |
+| Tool | Core Strength & Description | Platform | External Link |
 | :--- | :--- | :--- | :--- |
-| **Maze** | Unmoderated remote testing platform integrating directly with Figma prototypes. | Click-paths, Heatmaps, Drop-off | [maze.co ↗](https://maze.co/) |
-| **Useberry** | Prototype user testing tool with card sorting, tree testing, and first-click tests. | IA & Prototype testing | [useberry.com ↗](https://www.useberry.com/) |
-| **Lookback** | Moderated user interview platform with simultaneous face, audio, and screen recording. | Live qualitative testing | [lookback.com ↗](https://lookback.com/) |
-| **Hotjar** | Behavioral analytics platform tracking scroll-depth heatmaps and anonymous session recordings. | Live website auditing | [hotjar.com ↗](https://www.hotjar.com/) |
-| **UserTesting** | On-demand enterprise human insights platform with targeted participant recruitment. | Global audience testing | [usertesting.com ↗](https://www.usertesting.com/) |
+| **Google Stitch** | Google Labs multimodal AI tool that converts natural language prompts or sketches into responsive UI layouts and clean frontend markup. | Web-based | [stitch.withgoogle.com ↗](https://stitch.withgoogle.com/) |
+| **Uizard** | AI design tool that scans hand-drawn paper sketches or wireframe screenshots and converts them into editable digital UI layouts. | Web-based | [uizard.io ↗](https://uizard.io/) |
+| **v0 (by Vercel)** | Generative UI copilot that turns natural language descriptions into production-ready React (Tailwind CSS, shadcn/ui) interfaces. | Web-based | [v0.dev ↗](https://v0.dev/) |
+| **Galileo AI** | Generates editable, multi-layer vector UI screens directly for Figma from written descriptions. | Web-based | [usegalileo.ai ↗](https://www.usegalileo.ai/) |
+| **UX Pilot** | AI assistant for generating user interview scripts, wireflow outlines, and competitive design matrices. | Web-based | [uxpilot.ai ↗](https://www.uxpilot.ai/) |
 
-### 🛠️ Practical Session 5: Unmoderated Usability Audit via Maze
-- **Objective:** Measure the Task Completion Rate and Drop-off Rate for an e-commerce checkout flow.
+### 🛠️ Practical Session 5: Paper Sketch to Digital Interface via Uizard
+- **Objective:** Accelerate initial wireframe digitizing from napkin sketches.
 - **Step-by-Step Instructions:**
-  1. Copy your clickable Figma prototype share link.
-  2. Create a free test project on [Maze](https://maze.co/) and paste your Figma link.
-  3. Define a **Mission Block**:
-     - *Task Scenario:* "You want to buy a pair of running shoes. Find size 10 and complete checkout."
-     - *Expected Path:* Screen 1 ➔ Screen 2 (Product) ➔ Screen 3 (Cart) ➔ Screen 4 (Confirmation).
-  4. Send the test link to 5 participants.
-  5. Analyze the resulting **Heatmap report**:
-     - Identify where users clicked unexpectedly (mis-click rate > 20% flags a usability issue).
-     - Calculate the average **Time on Task** and **System Usability Scale (SUS)** score.
+  1. Take a piece of paper and sketch a 3-part dashboard screen (Header, Metric cards, Activity list).
+  2. Snap a photo with your smartphone.
+  3. Upload the image to [Uizard](https://uizard.io/) using the **Sketch to Wireframe** scanner.
+  4. Inspect the generated vector elements and adjust layout spacing to conform to the 8pt spatial grid.
 
 ---
 
-## Phase 6: Accessibility (a11y) & Inclusive Design Tools
+## 6. Usability Testing & Analytics
 
-Tools to audit color contrast, simulate color blindness, and verify compliance with WCAG 2.2 standards.
+Used to test design hypotheses with representative users and track post-launch behavioral engagement.
 
-| Tool | Core Use Case | Platform | External Link |
+| Tool | Core Strength & Description | Test Type | External Link |
 | :--- | :--- | :--- | :--- |
-| **Stark** | Complete accessibility suite: Contrast checks, focus order, vision simulators, and alt-text audits. | Figma Plugin & Browser Ext | [getstark.co ↗](https://www.getstark.co/) |
-| **WebAIM Contrast Checker** | Mathematical color contrast verification engine calculating exact AA/AAA ratios. | Web-based | [webaim.org/contrastchecker ↗](https://webaim.org/resources/contrastchecker/) |
-| **Axe DevTools** | The standard automated accessibility testing engine used by software engineers. | Chrome/Edge/Firefox Ext | [deque.com/axe/devtools ↗](https://www.deque.com/axe/devtools/) |
-| **Color Oracle** | Real-time full-screen color blindness simulator (Deuteranopia, Protanopia, Tritanopia). | macOS, Windows, Linux | [colororacle.org ↗](https://colororacle.org/) |
-| **WhoCanUse** | Evaluates how color contrast affects people with different visual impairments, cataracts, and screen glares. | Web-based | [whocanuse.com ↗](https://whocanuse.com/) |
+| **Maze** | Plugs directly into Figma prototypes for remote, unmoderated user testing, heatmaps, and success-rate tracking. | Unmoderated Prototype | [maze.co ↗](https://maze.co/) |
+| **Lookback** | For live, moderated qualitative user interviews with screen-recording and face-cam capture. | Moderated Qualitative | [lookback.com ↗](https://lookback.com/) |
+| **Useberry** | Tracks usability metrics, user flows, and click heatmaps directly on interactive prototypes. | Prototype Testing | [useberry.com ↗](https://www.useberry.com/) |
+| **Hotjar** | Session recording and behavior-analytics tools used once an interface goes live (scroll maps, rage clicks). | Post-Launch Analytics | [hotjar.com ↗](https://www.hotjar.com/) |
+| **UXCam** | In-depth mobile app behavioral analytics: crash session recordings, funnel drop-offs, and gesture heatmaps. | Native Mobile Analytics| [uxcam.com ↗](https://uxcam.com/) |
 
-### 🛠️ Practical Session 6: Running a Stark Contrast & Vision Audit in Figma
-- **Objective:** Audit a form and button system to guarantee 100% WCAG 2.2 AA compliance.
+### 🛠️ Practical Session 6: Running a Remote Usability Test on Maze
+- **Objective:** Measure whether users can complete an onboarding task without guidance.
 - **Step-by-Step Instructions:**
-  1. In Figma, open the **Plugins** menu and search for **Stark**.
-  2. Select your screen and launch the **Contrast Checker**.
-  3. Verify all body copy meets or exceeds **4.5:1** against the card background.
-  4. Open the **Vision Simulator** in Stark and switch to **Deuteranopia (Red-Green Color Blindness)**.
-  5. Observe your error state. Ensure the error message includes an icon (e.g. `⚠️`) and descriptive text rather than relying on a red border alone.
+  1. Link your interactive Figma prototype to a new test in [Maze](https://maze.co/).
+  2. Define a clear scenario prompt: *"You have just downloaded the app. Sign up using your work email and create a project named 'Alpha'."*
+  3. Define the critical path (Screen 1 ➔ Screen 2 ➔ Screen 3).
+  4. Send to 5 participants.
+  5. Review the resulting **Aggregated Heatmap** to identify mis-clicks and note average duration on each screen.
 
 ---
 
-## Phase 7: Design-to-Code Handoff & Token Management
+## 7. Developer Handoff & Design-to-Code Bridges
 
-Tools that bridge the gap between design mockups and front-end code repositories.
+Used to ensure design tokens, spacing, and assets translate cleanly into production code without ambiguity.
 
-| Tool | Core Use Case | Integration | External Link |
+| Tool | Core Strength & Description | Integration | External Link |
 | :--- | :--- | :--- | :--- |
-| **Figma Dev Mode** | Inspection canvas displaying CSS box models, spacing tokens, and asset downloads. | Native inside Figma | [figma.com/dev-mode ↗](https://www.figma.com/dev-mode/) |
-| **Tokens Studio for Figma** | Connects Figma variables directly to JSON design tokens and pushes to GitHub. | Figma Plugin / GitHub Sync | [tokens.studio ↗](https://tokens.studio/) |
-| **Style Dictionary** | Amazon's build system that transforms JSON design tokens into CSS, Sass, iOS, and Android code. | CLI / Node.js build tool | [amzn.github.io/style-dictionary ↗](https://amzn.github.io/style-dictionary/) |
-| **Storybook** | Frontend workshop environment for building, testing, and documenting UI components in isolation. | React, Vue, Web Components | [storybook.js.org ↗](https://storybook.js.org/) |
-| **Zeplin** | Version-locked design specification platform generating connected design systems and component links. | Web & Desktop | [zeplin.io ↗](https://zeplin.io/) |
+| **Figma Dev Mode** | Built-in inspection tool that translates Figma components and variables into CSS, Swift, and Kotlin. | Native in Figma | [figma.com/dev-mode ↗](https://www.figma.com/dev-mode/) |
+| **Zeplin** | Specialized workspace for organizing handoff specs, asset exporting, and developer documentation. | Web & Desktop | [zeplin.io ↗](https://zeplin.io/) |
+| **Framer** | Hybrid tool where visual canvas design directly produces live, responsive React-based websites and CMS pages. | Web & Hosting | [framer.com ↗](https://www.framer.com/) |
+| **Tokens Studio** | Bridges Figma design tokens directly into Git repositories and JSON formats for engineering teams. | Figma Plugin / GitHub | [tokens.studio ↗](https://tokens.studio/) |
+| **Style Dictionary** | Open-source build system that transforms JSON design tokens into platform-specific CSS variables, Sass, and Android XML. | CLI / Node.js | [amzn.github.io/style-dictionary ↗](https://amzn.github.io/style-dictionary/) |
 
-### 🛠️ Practical Session 7: Exporting W3C Design Tokens to CSS Variables
-- **Objective:** Export a color and spacing token palette from Figma and import it into a production CSS file.
+### 🛠️ Practical Session 7: Design-to-Code Synchronization
+- **Objective:** Connect Figma variables directly to a GitHub repository using Tokens Studio.
 - **Step-by-Step Instructions:**
-  1. Define your 3 core tokens in Figma Local Variables:
-     - `brand-primary: #3B82F6`
-     - `spacing-base: 16px`
-     - `radius-card: 12px`
-  2. Launch the **Tokens Studio** plugin and export the tokens as `tokens.json`.
-  3. Create a `tokens.css` file in your code editor and paste the variables:
-     ```css
-     :root {
-       --brand-primary: #3b82f6;
-       --spacing-base: 16px;
-       --radius-card: 12px;
-     }
-     ```
-  4. Apply these variables to a live HTML card component to verify parity between Figma and the browser.
+  1. Install [Tokens Studio](https://tokens.studio/) in Figma.
+  2. Create a global color token: `color.primary = #3B82F6`.
+  3. Configure sync with your GitHub repository: Enter repo URL and personal access token.
+  4. Push changes from Figma: Tokens Studio creates a commit with an updated `tokens.json`.
+  5. Review the commit on GitHub and verify your frontend application picks up the new token.
+
+---
+
+## 8. Essential Figma Plugins for Daily Workflow
+
+Plugins that dramatically accelerate everyday design production, accessibility auditing, and code export.
+
+| Plugin | Category | What It Does | Direct Plugin Link |
+| :--- | :--- | :--- | :--- |
+| **Iconify** | Icons | Search and import over 100,000 open-source vector icons (Material, FontAwesome, Lucide) directly as SVG layers. | [Iconify on Figma Community ↗](https://www.figma.com/community/plugin/735098390272722638/iconify) |
+| **Feather Icons** | Icons | Minimalist, 24x24 pixel-perfect open-source vector icon set on an 8pt grid. | [Feather Icons on Figma ↗](https://www.figma.com/community/plugin/744047968581015511/feather-icons) |
+| **FlatIcon** | Icons & Graphics | Millions of vector icons and stickers across dozens of design aesthetics. | [FlatIcon on Figma ↗](https://www.figma.com/community/plugin/1159900057037748897/flaticon) |
+| **Content Reel** | Content Fillers | Rapidly populates realistic avatars, full names, dates, addresses, and phone numbers with 1 click. | [Content Reel on Figma ↗](https://www.figma.com/community/plugin/731627008704299635/content-reel) |
+| **Unsplash** | Content Fillers | Inserts royalty-free editorial photography directly into vector shapes and frames. | [Unsplash on Figma ↗](https://www.figma.com/community/plugin/738454987945972471/unsplash) |
+| **Stark** | Accessibility | Audits WCAG contrast ratios, checks focus order, and simulates 8 types of color blindness. | [Stark on Figma ↗](https://www.figma.com/community/plugin/732603254453395948/stark-contrast-accessibility-checker) |
+| **Contrast** | Accessibility | Real-time WCAG AA & AAA contrast checker that updates automatically as you select layers. | [Contrast on Figma ↗](https://www.figma.com/community/plugin/733159463094855731/contrast) |
+| **Adee** | Accessibility | Comprehensive accessibility tool for color contrast, touch target testing, and alt-text generator. | [Adee on Figma ↗](https://www.figma.com/community/plugin/846875936855138127/adee-comprehensive-accessibility-tool) |
+| **Anima** | Code Export | Converts Figma prototypes into responsive React, Vue, HTML, and CSS code. | [Anima on Figma ↗](https://www.figma.com/community/plugin/857346521132618398/anima-figma-to-code) |
+| **Builder.io** | Code Export | AI-assisted code generation converting Figma screens into clean Tailwind CSS / React components. | [Builder.io on Figma ↗](https://www.figma.com/community/plugin/747985167520967365/builder-io-figma-to-code) |
+
+### 🛠️ Practical Session 8: Rapid Prototyping with Content Reel & Stark
+- **Objective:** Populate a contact list mockup with realistic data and ensure 100% WCAG 2.2 AA accessibility.
+- **Step-by-Step Instructions:**
+  1. In Figma, create a contact card layout with a circular avatar frame, name text layer, and email text layer.
+  2. Duplicate the card 5 times in a vertical Auto Layout stack.
+  3. Select all avatar frames, launch [Content Reel](https://www.figma.com/community/plugin/731627008704299635/content-reel), and click **Avatars** to fill diverse portraits instantly.
+  4. Select the name text layers and click **Full Names** in Content Reel.
+  5. Select the entire card stack and run [Stark](https://www.figma.com/community/plugin/732603254453395948/stark-contrast-accessibility-checker) to verify that the secondary email text meets the minimum **4.5:1 ratio**.
