@@ -31,6 +31,7 @@ Explore the interactive web version featuring an **8pt Grid Visualizer**, a real
 | **08. Usability Testing & Metrics** | Jakob Nielsen's 5-user rule, moderated vs unmoderated testing, scenario-based non-leading tasks, 10 Usability Heuristics, Task Success Rate, SEQ, and SUS benchmark. | [**Module 08**](course/08-usability-testing-and-analytics.md) |
 | **09. Design-to-Code Handoff** | Overcoming developer friction, Figma Dev Mode redlines, 8 component states matrix, asset export specs (SVG, WebP), Style Dictionary tokens, and engineering sign-off checklist. | [**Module 09**](course/09-design-to-code-handoff-and-collaboration.md) |
 | **10. Case Studies & Portfolios** | Quality over quantity, the 8-part case study anatomy, storytelling structure, showcasing the "messy middle", and design portfolio interview preparation tips. | [**Module 10**](course/10-ui-ux-portfolio-and-case-study-guide.md) |
+| **11. Tools Directory & Practical Sessions** | Complete directory of 30+ industry UI/UX tools with verified external links, plus 7 step-by-step practical sessions across all lifecycle phases. | [**Module 11**](course/11-ui-ux-tools-directory-and-practical-sessions.md) |
 
 ---
 
@@ -49,7 +50,7 @@ Jumpstart client projects and design sprints with ready-to-use worksheets:
 ```text
 ui-ux-design-course/
 │
-├── course/                                 # 10 In-Depth Course Modules
+├── course/                                 # 11 In-Depth Course Modules
 │   ├── 01-introduction-to-ui-ux-design.md
 │   ├── 02-user-research-personas-and-journey-mapping.md
 │   ├── 03-information-architecture-and-user-flows.md
@@ -60,6 +61,7 @@ ui-ux-design-course/
 │   ├── 08-usability-testing-and-analytics.md
 │   ├── 09-design-to-code-handoff-and-collaboration.md
 │   ├── 10-ui-ux-portfolio-and-case-study-guide.md
+│   ├── 11-ui-ux-tools-directory-and-practical-sessions.md
 │   └── README.md                           # Course roadmap & syllabus index
 │
 ├── templates-and-checklists/               # Real-World Design Worksheets

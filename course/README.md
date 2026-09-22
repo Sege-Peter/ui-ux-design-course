@@ -18,6 +18,7 @@ Welcome to the comprehensive, self-paced **UI/UX Design Master Course**. This cu
 | **08. Usability Testing & Metrics** | Jakob Nielsen's 5-user rule, moderated vs unmoderated testing, scenario-based non-leading tasks, 10 Usability Heuristics, Task Success Rate, SEQ, and SUS benchmark. | [**Module 08**](08-usability-testing-and-analytics.md) |
 | **09. Design-to-Code Handoff** | Overcoming developer friction, Figma Dev Mode redlines, 8 component states matrix, asset export specs (SVG, WebP), Style Dictionary tokens, and engineering sign-off checklist. | [**Module 09**](09-design-to-code-handoff-and-collaboration.md) |
 | **10. Case Studies & Portfolios** | Quality over quantity, the 8-part case study anatomy, storytelling structure, showcasing the "messy middle", and design portfolio interview preparation tips. | [**Module 10**](10-ui-ux-portfolio-and-case-study-guide.md) |
+| **11. Tools Directory & Practical Sessions** | Complete directory of 30+ industry UI/UX tools with direct external links, plus 7 step-by-step practical sessions across all lifecycle phases. | [**Module 11**](11-ui-ux-tools-directory-and-practical-sessions.md) |
 
 ---
 
