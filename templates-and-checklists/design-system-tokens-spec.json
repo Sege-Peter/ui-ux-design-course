@@ -1,0 +1,86 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "color": {
+    "brand": {
+      "50": { "$value": "#eff6ff", "$type": "color" },
+      "100": { "$value": "#dbeafe", "$type": "color" },
+      "500": { "$value": "#3b82f6", "$type": "color" },
+      "600": { "$value": "#2563eb", "$type": "color" },
+      "900": { "$value": "#1e3a8a", "$type": "color" }
+    },
+    "neutral": {
+      "white": { "$value": "#ffffff", "$type": "color" },
+      "slate-50": { "$value": "#f8fafc", "$type": "color" },
+      "slate-100": { "$value": "#f1f5f9", "$type": "color" },
+      "slate-200": { "$value": "#e2e8f0", "$type": "color" },
+      "slate-500": { "$value": "#64748b", "$type": "color" },
+      "slate-900": { "$value": "#0f172a", "$type": "color" }
+    },
+    "semantic": {
+      "success": { "$value": "#10b981", "$type": "color" },
+      "warning": { "$value": "#f59e0b", "$type": "color" },
+      "danger": { "$value": "#ef4444", "$type": "color" },
+      "info": { "$value": "#0284c7", "$type": "color" }
+    }
+  },
+  "spacing": {
+    "scale": {
+      "4": { "$value": "4px", "$type": "dimension" },
+      "8": { "$value": "8px", "$type": "dimension" },
+      "12": { "$value": "12px", "$type": "dimension" },
+      "16": { "$value": "16px", "$type": "dimension" },
+      "24": { "$value": "24px", "$type": "dimension" },
+      "32": { "$value": "32px", "$type": "dimension" },
+      "48": { "$value": "48px", "$type": "dimension" },
+      "64": { "$value": "64px", "$type": "dimension" }
+    }
+  },
+  "typography": {
+    "fontFamily": {
+      "sans": { "$value": "Inter, -apple-system, BlinkMacSystemFont, sans-serif", "$type": "fontFamily" },
+      "mono": { "$value": "Fira Code, Consolas, monospace", "$type": "fontFamily" }
+    },
+    "fontSize": {
+      "xs": { "$value": "12px", "$type": "dimension" },
+      "sm": { "$value": "14px", "$type": "dimension" },
+      "base": { "$value": "16px", "$type": "dimension" },
+      "lg": { "$value": "18px", "$type": "dimension" },
+      "xl": { "$value": "20px", "$type": "dimension" },
+      "2xl": { "$value": "24px", "$type": "dimension" },
+      "3xl": { "$value": "30px", "$type": "dimension" },
+      "4xl": { "$value": "38px", "$type": "dimension" }
+    }
+  },
+  "elevation": {
+    "sm": {
+      "$value": {
+        "offsetX": "0px",
+        "offsetY": "1px",
+        "blur": "3px",
+        "spread": "0px",
+        "color": "rgba(0, 0, 0, 0.08)"
+      },
+      "$type": "shadow"
+    },
+    "md": {
+      "$value": {
+        "offsetX": "0px",
+        "offsetY": "4px",
+        "blur": "6px",
+        "spread": "-1px",
+        "color": "rgba(0, 0, 0, 0.1)"
+      },
+      "$type": "shadow"
+    },
+    "lg": {
+      "$value": {
+        "offsetX": "0px",
+        "offsetY": "20px",
+        "blur": "25px",
+        "spread": "-5px",
+        "color": "rgba(0, 0, 0, 0.1)"
+      },
+      "$type": "shadow"
+    }
+  }
+}

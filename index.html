@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Comprehensive UI/UX Design Course, Living Design System & Practical Heuristics Hub by Sege Peter ENG." />
+  <meta name="author" content="Sege Peter ENG" />
+  <title>UI/UX Design Master Course & Living Design System | Sege Peter</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+  <!-- Google Fonts: Inter & Fira Code -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Optional 8pt Grid Overlay (Toggled via JS) -->
+  <div id="grid-overlay" class="grid-overlay hidden" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header class="header" id="top">
+    <div class="container nav-container">
+      <a href="#top" class="logo" aria-label="UI/UX Mastery Home">
+        <span class="logo-mark">❖</span>
+        <span class="logo-text">UI/UX<span class="accent">.Mastery</span></span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#modules" class="nav-link">Syllabus</a></li>
+          <li><a href="#design-system" class="nav-link">Design System</a></li>
+          <li><a href="#contrast-tool" class="nav-link">Contrast Tool</a></li>
+          <li><a href="#heuristics" class="nav-link">10 Heuristics</a></li>
+          <li><a href="#templates" class="nav-link">Templates</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="grid-toggle-btn" class="btn btn-outline btn-sm" title="Toggle 8pt Visual Grid Overlay">
+          8pt Grid: <span id="grid-status">Off</span>
+        </button>
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle Dark/Light theme" title="Toggle theme">
+          <span id="theme-icon">🌙</span>
+        </button>
+        <button id="nav-toggle" class="hamburger" aria-label="Toggle Navigation" aria-expanded="false" aria-controls="nav-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="badge hero-badge">Professional UI/UX Curriculum</div>
+          <h1 class="hero-title">
+            Master Human-Centered <span class="gradient-text">Product Design</span> & Systems
+          </h1>
+          <p class="hero-subtitle">
+            A comprehensive, open-source course covering foundational UX research, the Double Diamond process, Figma Auto Layout, W3C design tokens, WCAG 2.2 accessibility, and developer handoff.
+          </p>
+          <div class="hero-cta">
+            <a href="#modules" class="btn btn-primary">Browse 10 Modules</a>
+            <a href="#design-system" class="btn btn-secondary">Interactive Design System</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">10</span>
+              <span class="stat-label">In-Depth Modules</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">WCAG 2.2</span>
+              <span class="stat-label">AA Compliance</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">8pt Grid</span>
+              <span class="stat-label">Spatial System</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="design-card-preview">
+            <div class="card-header-mockup">
+              <div class="layer-pill">❖ Auto Layout: Fill</div>
+              <div class="token-tag">#3B82F6 (Primary)</div>
+            </div>
+            <div class="card-body-mockup">
+              <div class="mockup-avatar"></div>
+              <div class="mockup-lines">
+                <div class="mockup-line title-line"></div>
+                <div class="mockup-line sub-line"></div>
+              </div>
+            </div>
+            <div class="mockup-button-group">
+              <button class="btn btn-primary btn-sm">Primary Action</button>
+              <button class="btn btn-secondary btn-sm">Dismiss</button>
+            </div>
+            <div class="mockup-measurements">
+              <span>Padding: 24px (3x 8pt)</span>
+              <span>Gap: 16px (2x 8pt)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Course Modules Section -->
+    <section class="section modules-section" id="modules">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Complete Syllabus</span>
+          <h2 class="section-title">10 Progressive Learning Modules</h2>
+          <p class="section-description">
+            From beginner fundamentals to advanced product design systems and career portfolio presentation.
+          </p>
+        </div>
+
+        <div class="modules-grid">
+          <!-- Module 1 -->
+          <article class="module-card">
+            <div class="module-number">01</div>
+            <div class="module-body">
+              <span class="module-tag">Foundations</span>
+              <h3 class="module-title">Introduction to UI/UX Design</h3>
+              <p class="module-desc">Core definitions, UI vs UX comparison, The Double Diamond framework, modern tool stack (Figma, FigJam, Google Stitch), and foundational design laws.</p>
+              <a href="https://github.com/Sege-Peter/ui-ux-design-course/blob/main/course/01-introduction-to-ui-ux-design.md" target="_blank" rel="noopener noreferrer" class="card-link">Read Module Guide ➔</a>
+            </div>
+          </article>
+
+          <!-- Module 2 -->
+          <article class="module-card">
+            <div class="module-number">02</div>
+            <div class="module-body">
+              <span class="module-tag">Research</span>
+              <h3 class="module-title">User Research & Personas</h3>
+              <p class="module-desc">Qualitative vs quantitative discovery, effective 1-on-1 user interviews, empathy maps, actionable user personas, and "How Might We" statements.</p>
+              <a href="https://github.com/Sege-Peter/ui-ux-design-course/blob/main/course/02-user-research-personas-and-journey-mapping.md" target="_blank" rel="noopener noreferrer" class="card-link">Read Module Guide ➔</a>
+            </div>
+          </article>
+
+          <!-- Module 3 -->
+          <article class="module-card">
+            <div class="module-number">03</div>
+            <div class="module-body">
+              <span class="module-tag">Structure</span>
+              <h3 class="module-title">Information Architecture & Flows</h3>
+              <p class="module-desc">Open vs closed card sorting, flat vs deep navigation hierarchies, sitemaps, user flow diagrams, and accounting for empty/error states.</p>
+              <a href="https://github.com/Sege-Peter/ui-ux-design-course/blob/main/course/03-information-architecture-and-user-flows.md" target="_blank" rel="noopener noreferrer" class="card-link">Read Module Guide ➔</a>
+            </div>
+          </article>
+
+          <!-- Module 4 -->
+          <article class="module-card">
+            <div class="module-number">04</div>
+            <div class="module-body">
+              <span class="module-tag">Figma</span>
+              <h3 class="module-title">Wireframing & Prototyping</h3>
+              <p class="module-desc">Grayscale wireframing, Figma Auto Layout (Fixed, Hug, Fill), main components and variants, component properties, and Smart Animate prototyping.</p>
+              <a href="https://github.com/Sege-Peter/ui-ux-design-course/blob/main/course/04-wireframing-and-prototyping.md" target="_blank" rel="noopener noreferrer" class="card-link">Read Module Guide ➔</a>
+            </div>
+          </article>
+
+          <!-- Module 5 -->
+          <article class="module-card">
+            <div class="module-number">05</div>
+            <div class="module-body">
+              <span class="module-tag">Visuals</span>
+              <h3 class="module-title">Visual Design Foundations</h3>
+              <p class="module-desc">The 8pt spatial grid scale, typography scales and line-height formulas, the 60-30-10 color rule, semantic palettes, and elevation tokens.</p>
+              <a href="https://github.com/Sege-Peter/ui-ux-design-course/blob/main/course/05-visual-design-foundations.md" target="_blank" rel="noopener noreferrer" class="card-link">Read Module Guide ➔</a>
+            </div>
+          </article>
+
+          <!-- Module 6 -->
+          <article class="module-card">
+            <div class="module-number">06</div>
+            <div class="module-body">
+              <span class="module-tag">Architecture</span>
+              <h3 class="module-title">Design Systems & Tokens</h3>
+              <p class="module-desc">Brad Frost's Atomic Design methodology, 3-tier design token architecture (Global, Semantic, Component), component documentation, and usage do's and don'ts.</p>
+              <a href="https://github.com/Sege-Peter/ui-ux-design-course/blob/main/course/06-design-systems-and-component-libraries.md" target="_blank" rel="noopener noreferrer" class="card-link">Read Module Guide ➔</a>
+            </div>
+          </article>
+
+          <!-- Module 7 -->
+          <article class="module-card">
+            <div class="module-number">07</div>
+            <div class="module-body">
+              <span class="module-tag">Accessibility</span>
+              <h3 class="module-title">Accessibility & Inclusive Design</h3>
+              <p class="module-desc">WCAG 2.2 POUR principles, color contrast thresholds (4.5:1 for AA), 48x48px mobile touch targets, color-blindness accommodations, and keyboard focus rings.</p>
+              <a href="https://github.com/Sege-Peter/ui-ux-design-course/blob/main/course/07-accessibility-and-inclusive-design.md" target="_blank" rel="noopener noreferrer" class="card-link">Read Module Guide ➔</a>
+            </div>
+          </article>
+
+          <!-- Module 8 -->
+          <article class="module-card">
+            <div class="module-number">08</div>
+            <div class="module-body">
+              <span class="module-tag">Evaluation</span>
+              <h3 class="module-title">Usability Testing & Metrics</h3>
+              <p class="module-desc">Jakob Nielsen's 5-user principle, moderated vs unmoderated testing, scenario-based non-leading tasks, 10 Usability Heuristics, SEQ, and the SUS benchmark.</p>
+              <a href="https://github.com/Sege-Peter/ui-ux-design-course/blob/main/course/08-usability-testing-and-analytics.md" target="_blank" rel="noopener noreferrer" class="card-link">Read Module Guide ➔</a>
+            </div>
+          </article>
+
+          <!-- Module 9 -->
+          <article class="module-card">
+            <div class="module-number">09</div>
+            <div class="module-body">
+              <span class="module-tag">Engineering</span>
+              <h3 class="module-title">Design-to-Code Handoff</h3>
+              <p class="module-desc">Figma Dev Mode redlines, the 8-state component matrix, asset export specs (SVG, WebP), Style Dictionary token pipelines, and the pre-handoff checklist.</p>
+              <a href="https://github.com/Sege-Peter/ui-ux-design-course/blob/main/course/09-design-to-code-handoff-and-collaboration.md" target="_blank" rel="noopener noreferrer" class="card-link">Read Module Guide ➔</a>
+            </div>
+          </article>
+
+          <!-- Module 10 -->
+          <article class="module-card">
+            <div class="module-number">10</div>
+            <div class="module-body">
+              <span class="module-tag">Career</span>
+              <h3 class="module-title">UX Case Studies & Portfolio</h3>
+              <p class="module-desc">The 8-part case study anatomy, storytelling structure, showcasing the messy middle, scannability tactics, and acing the whiteboard design interview.</p>
+              <a href="https://github.com/Sege-Peter/ui-ux-design-course/blob/main/course/10-ui-ux-portfolio-and-case-study-guide.md" target="_blank" rel="noopener noreferrer" class="card-link">Read Module Guide ➔</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Living Design System Section -->
+    <section class="section ds-section" id="design-system">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Interactive Tokens</span>
+          <h2 class="section-title">Living Design System Tokens</h2>
+          <p class="section-description">
+            Inspect the visual tokens that ensure mathematical rhythm and visual consistency across screens.
+          </p>
+        </div>
+
+        <!-- Color Palette -->
+        <div class="ds-block">
+          <h3 class="ds-block-title">1. Color Palette Tokens</h3>
+          <div class="swatches-grid">
+            <div class="swatch-card" style="--swatch-color: #3b82f6;">
+              <div class="swatch-box"></div>
+              <div class="swatch-info">
+                <strong>Brand 500</strong>
+                <code>#3B82F6</code>
+              </div>
+            </div>
+            <div class="swatch-card" style="--swatch-color: #2563eb;">
+              <div class="swatch-box"></div>
+              <div class="swatch-info">
+                <strong>Brand 600</strong>
+                <code>#2563EB</code>
+              </div>
+            </div>
+            <div class="swatch-card" style="--swatch-color: #10b981;">
+              <div class="swatch-box"></div>
+              <div class="swatch-info">
+                <strong>Success 500</strong>
+                <code>#10B981</code>
+              </div>
+            </div>
+            <div class="swatch-card" style="--swatch-color: #f59e0b;">
+              <div class="swatch-box"></div>
+              <div class="swatch-info">
+                <strong>Warning 500</strong>
+                <code>#F59E0B</code>
+              </div>
+            </div>
+            <div class="swatch-card" style="--swatch-color: #ef4444;">
+              <div class="swatch-box"></div>
+              <div class="swatch-info">
+                <strong>Danger 500</strong>
+                <code>#EF4444</code>
+              </div>
+            </div>
+            <div class="swatch-card" style="--swatch-color: #0f172a;">
+              <div class="swatch-box"></div>
+              <div class="swatch-info">
+                <strong>Slate 900</strong>
+                <code>#0F172A</code>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8pt Spatial Grid Scale -->
+        <div class="ds-block">
+          <h3 class="ds-block-title">2. Spatial Spacing Scale (8pt System)</h3>
+          <div class="spacing-demo-grid">
+            <div class="spacing-item">
+              <div class="spacing-bar" style="height: 8px;"></div>
+              <span>8px (1x)</span>
+            </div>
+            <div class="spacing-item">
+              <div class="spacing-bar" style="height: 16px;"></div>
+              <span>16px (2x)</span>
+            </div>
+            <div class="spacing-item">
+              <div class="spacing-bar" style="height: 24px;"></div>
+              <span>24px (3x)</span>
+            </div>
+            <div class="spacing-item">
+              <div class="spacing-bar" style="height: 32px;"></div>
+              <span>32px (4x)</span>
+            </div>
+            <div class="spacing-item">
+              <div class="spacing-bar" style="height: 48px;"></div>
+              <span>48px (6x)</span>
+            </div>
+            <div class="spacing-item">
+              <div class="spacing-bar" style="height: 64px;"></div>
+              <span>64px (8x)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Live Color Contrast Checker Tool -->
+    <section class="section contrast-section" id="contrast-tool">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Accessibility Tool</span>
+          <h2 class="section-title">WCAG 2.2 Color Contrast Calculator</h2>
+          <p class="section-description">
+            Test any foreground text and background color combination to calculate compliance in real time.
+          </p>
+        </div>
+
+        <div class="contrast-calculator-box">
+          <div class="calculator-inputs">
+            <div class="calc-group">
+              <label for="text-color-input">Text (Foreground) Hex:</label>
+              <div class="color-input-wrapper">
+                <input type="color" id="text-color-picker" value="#0F172A" />
+                <input type="text" id="text-color-hex" value="#0F172A" maxlength="7" />
+              </div>
+            </div>
+
+            <div class="calc-group">
+              <label for="bg-color-input">Background Hex:</label>
+              <div class="color-input-wrapper">
+                <input type="color" id="bg-color-picker" value="#FFFFFF" />
+                <input type="text" id="bg-color-hex" value="#FFFFFF" maxlength="7" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Preview & Score -->
+          <div class="calculator-preview-panel" id="contrast-preview">
+            <div class="preview-text-block">
+              <span class="preview-large">Large Heading Text (18px+)</span>
+              <p class="preview-body">Normal body text sample for readability evaluation.</p>
+            </div>
+
+            <div class="contrast-score-card">
+              <div class="ratio-display">
+                <span id="contrast-ratio-value">16.1 : 1</span>
+                <span class="ratio-label">Contrast Ratio</span>
+              </div>
+              <div class="compliance-badges">
+                <span class="badge badge-pass" id="badge-aa-normal">AA Normal: PASS</span>
+                <span class="badge badge-pass" id="badge-aa-large">AA Large: PASS</span>
+                <span class="badge badge-pass" id="badge-aaa">AAA: PASS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10 Heuristics Section -->
+    <section class="section heuristics-section" id="heuristics">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Usability Audit</span>
+          <h2 class="section-title">Nielsen's 10 Usability Heuristics</h2>
+          <p class="section-description">
+            The industry-standard rulebook for identifying design friction and usability flaws.
+          </p>
+        </div>
+
+        <div class="heuristics-grid">
+          <div class="heuristic-card">
+            <span class="h-number">#1</span>
+            <h4>Visibility of System Status</h4>
+            <p>Always keep users informed about system progress via loading spinners, progress bars, and active state feedback.</p>
+          </div>
+          <div class="heuristic-card">
+            <span class="h-number">#2</span>
+            <h4>Match System & Real World</h4>
+            <p>Speak the user's natural language, using familiar words, phrases, and visual metaphors rather than system jargon.</p>
+          </div>
+          <div class="heuristic-card">
+            <span class="h-number">#3</span>
+            <h4>User Control & Freedom</h4>
+            <p>Provide clear emergency exits: Undo, Cancel, and Back buttons allow quick recovery from accidental clicks.</p>
+          </div>
+          <div class="heuristic-card">
+            <span class="h-number">#4</span>
+            <h4>Consistency & Standards</h4>
+            <p>Follow established industry conventions (Jakob's Law) so users don't have to relearn how navigation functions.</p>
+          </div>
+          <div class="heuristic-card">
+            <span class="h-number">#5</span>
+            <h4>Error Prevention</h4>
+            <p>Design out error-prone conditions upfront using confirmation modals, input masks, and intelligent smart defaults.</p>
+          </div>
+          <div class="heuristic-card">
+            <span class="h-number">#6</span>
+            <h4>Recognition over Recall</h4>
+            <p>Make options, active filters, and actions visible so the user's memory load is kept to an absolute minimum.</p>
+          </div>
+          <div class="heuristic-card">
+            <span class="h-number">#7</span>
+            <h4>Flexibility & Efficiency</h4>
+            <p>Offer keyboard shortcuts, batch actions, and accelerators to speed up interactions for experienced power users.</p>
+          </div>
+          <div class="heuristic-card">
+            <span class="h-number">#8</span>
+            <h4>Aesthetic & Minimalist Design</h4>
+            <p>Adhere to the 60-30-10 color rule and eliminate extraneous visual noise that competes with primary tasks.</p>
+          </div>
+          <div class="heuristic-card">
+            <span class="h-number">#9</span>
+            <h4>Help Users Recover from Errors</h4>
+            <p>Express error messages in plain, constructive language that explains what went wrong and how to fix it.</p>
+          </div>
+          <div class="heuristic-card">
+            <span class="h-number">#10</span>
+            <h4>Help & Documentation</h4>
+            <p>Provide easy-to-search FAQs, contextual tooltips, and straightforward onboarding when assistance is needed.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Templates & Resources Section -->
+    <section class="section templates-section" id="templates">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Worksheets & Tools</span>
+          <h2 class="section-title">Design Templates & Checklists</h2>
+          <p class="section-description">
+            Production-ready templates you can copy directly for client projects and user research sprints.
+          </p>
+        </div>
+
+        <div class="templates-grid">
+          <div class="template-card">
+            <div class="t-icon">📋</div>
+            <h3>UX Heuristics Checklist</h3>
+            <p>A structured 10-principle evaluation worksheet with 0-to-4 severity scoring to audit websites and mobile apps.</p>
+            <a href="https://github.com/Sege-Peter/ui-ux-design-course/blob/main/templates-and-checklists/ux-heuristics-evaluation-checklist.md" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">View Checklist ➔</a>
+          </div>
+
+          <div class="template-card">
+            <div class="t-icon">👤</div>
+            <h3>User Persona Worksheet</h3>
+            <p>A standardized user profile template outlining goals, environmental context, pain points, and user quotes.</p>
+            <a href="https://github.com/Sege-Peter/ui-ux-design-course/blob/main/templates-and-checklists/user-persona-template.md" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">View Persona Template ➔</a>
+          </div>
+
+          <div class="template-card">
+            <div class="t-icon">🎨</div>
+            <h3>Design Tokens Spec (JSON)</h3>
+            <p>W3C Design Token Community Group specification for colors, typography scales, spacing, and shadow tokens.</p>
+            <a href="https://github.com/Sege-Peter/ui-ux-design-course/blob/main/templates-and-checklists/design-system-tokens-spec.json" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">View Tokens JSON ➔</a>
+          </div>
+
+          <div class="template-card">
+            <div class="t-icon">📑</div>
+            <h3>Project Design Brief</h3>
+            <p>Strategic discovery document aligning stakeholders on business KPIs, user archetypes, and technical deliverables.</p>
+            <a href="https://github.com/Sege-Peter/ui-ux-design-course/blob/main/templates-and-checklists/design-brief-template.md" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">View Design Brief ➔</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <div class="footer-brand">
+          <span class="logo-mark">❖</span>
+          <span>UI/UX Design Master Course</span>
+        </div>
+        <p class="footer-desc">
+          Authored and curated by Sege Peter ENG. Built with pure semantic web standards, W3C design tokens, and WCAG 2.2 accessibility.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#modules">Syllabus</a>
+        <a href="#design-system">Design System</a>
+        <a href="#heuristics">Heuristics</a>
+        <a href="https://github.com/Sege-Peter/ui-ux-design-course" target="_blank" rel="noopener noreferrer">GitHub Repository ↗</a>
+        <a href="https://github.com/Sege-Peter" target="_blank" rel="noopener noreferrer">Sege-Peter Profile ↗</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Sege Peter ENG. Released under the MIT Open Source License.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/app.js"></script>
+</body>
+</html>

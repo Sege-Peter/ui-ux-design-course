@@ -1,0 +1,19 @@
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node / Package managers (if integrated)
+node_modules/
+package-lock.json
+
+# Build outputs & logs
+dist/
+build/
+*.log
